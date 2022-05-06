@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoriesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="168dp"
+            android:layout_height="166dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/image_story"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/headlineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="&quot;Headline!&quot;"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1"
+            />
+
+        <ScrollView
+            android:layout_width="400dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headlineText">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi tellus, interdum id commodo quis, viverra ."
+                    app:layout_constraintBaseline_toBottomOf="@id/headlineText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Related Stories"
+                    android:textSize="20dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/storyButton1"
+                        android:layout_width="190dp"
+                        android:layout_height="125dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/image_story" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/storyHeadlineText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Headline"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView91"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi tellus, interdum id commodo quis, viverra ." />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/storyButton2"
+                        android:layout_width="190dp"
+                        android:layout_height="125dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/image_story" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/storyHeadlineText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Headline"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView92"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi tellus, interdum id commodo quis, viverra ." />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/storyButton3"
+                        android:layout_width="190dp"
+                        android:layout_height="125dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/image_story" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/storyHeadlineText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Headline"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView93"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi tellus, interdum id commodo quis, viverra ." />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/storyButton4"
+                        android:layout_width="190dp"
+                        android:layout_height="125dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/image_story" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/storyHeadlineText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Headline"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi tellus, interdum id commodo quis, viverra ." />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
